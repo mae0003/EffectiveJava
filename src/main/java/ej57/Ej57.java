@@ -1,4 +1,4 @@
-package Ej57;
+package ej57;
 
 import org.apache.commons.lang3.math.NumberUtils;
 
@@ -16,7 +16,12 @@ public class Ej57 {
 	}
 
 	public boolean validateNumber1(String value) {
-		return false;
+		try {
+			Integer.parseInt(value);
+			return true;
+		} catch (NumberFormatException e) {
+			return false;
+		}
 	}
 
 }

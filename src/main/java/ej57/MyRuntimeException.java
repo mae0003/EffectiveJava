@@ -1,4 +1,4 @@
-package Ej57;
+package ej57;
 
 public class MyRuntimeException extends RuntimeException {
 
