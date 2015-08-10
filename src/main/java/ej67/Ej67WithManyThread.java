@@ -19,7 +19,9 @@ public class Ej67WithManyThread {
 					ExecutorService executor = Executors.newSingleThreadExecutor();
 					final SetObserver<Integer> observer = this;
 					try {
+						System.out.println("削除開始");
 						executor.submit(() -> s.removeObserver(observer)).get();
+						System.out.println("削除完了");
 					} catch (Exception ex) {
 						throw new AssertionError(ex.getCause());
 					} finally {
