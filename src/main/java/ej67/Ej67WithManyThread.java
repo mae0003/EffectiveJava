@@ -8,8 +8,7 @@ public class Ej67WithManyThread {
 
 	public static void main(String[] args) {
 
-		ObservableSet<Integer> set = new ObservableSet<Integer>(
-				new HashSet<Integer>());
+		ObservableSet<Integer> set = new ObservableSet<Integer>(new HashSet<Integer>());
 
 		// Observer that uses a background thread needlessly
 		set.addObserver(new SetObserver<Integer>() {
