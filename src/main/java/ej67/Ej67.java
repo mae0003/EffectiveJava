@@ -12,7 +12,8 @@ public class Ej67 {
 			@Override
 			public void added(ObservableSet<Integer> s, Integer e) {
 				System.out.println("追加された数字は ->" + e);
-				// if (e == 23) s.removeObserver(this);
+				if (e == 23)
+					s.removeObserver(this);
 			}
 		});
 

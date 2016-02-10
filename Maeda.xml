@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_40" class="java.beans.XMLDecoder">
+ <object class="ej74.Maeda">
+  <void property="age">
+   <int>41</int>
+  </void>
+  <void property="nanDaime">
+   <int>5</int>
+  </void>
+  <void property="secondName">
+   <string>hiroyuki</string>
+  </void>
+ </object>
+</java>

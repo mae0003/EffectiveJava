@@ -20,7 +20,7 @@ public class Ej67WithManyThread {
 					final SetObserver<Integer> observer = this;
 					try {
 						System.out.println("削除開始");
-						executor.submit(() -> s.removeObserver(observer)).get();
+						executor.execute(() -> s.removeObserver(observer)); // .get();
 						System.out.println("削除完了");
 					} catch (Exception ex) {
 						throw new AssertionError(ex.getCause());
